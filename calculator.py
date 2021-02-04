@@ -1,15 +1,20 @@
+#File to run unit tests on
 
+#Addition function
+def addition(a,b):
+    return a+b
 
-def main():
-    input1 = int(input("Enter an integer: "))
-    input2 = int(input("Enter another integer: "))
+#Subtraction function
+def subtraction(a,b):
+    return a-b
 
-    print("\nHere are your results:")
-    print(input1, "plus", input2, "equals", input1+input2)
-    print(input1, "minus", input2, "equals", input1-input2)
-    print(input1, "divided by", input2, "equals", input1/input2)
-    print(input1, "times", input2, "equals", input1*input2)
+#Division function
+def division(a,b):
+    if(b == 0):
+        return "undefined"
+    else:
+        return a/float(b)
 
-
-
-main()
+#Multiplication function
+def multiplication(a,b):
+    return a*b
